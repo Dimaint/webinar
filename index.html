@@ -6,8 +6,11 @@
     <title>Вебинар - практикум</title>
     <link rel="stylesheet" href="./style/main.css">
     <script src="https://kit.fontawesome.com/ae2103979a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <img src="./img/Ellipse 6.svg" alt="" class="elips1">
+    <img src="./img/Ellipse 7.svg" alt="" class="elips2">
     <header>
         <div class="logo">
             <h1>Вебинар - практикум</h1>
@@ -23,6 +26,7 @@
                 <li> <a href="">публикации</a></li>
             </ul>
         </nav>
+        <button class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <span class="btn"><a href="">принять участие</a></span>
     </header>
     <main>
@@ -167,43 +171,141 @@
             <h2>Результаты  <span class="text_blue">учеников</span></h2>
             <p>Именно они вдохновляют проводить бесплатные вебинары и заряжают энергией</p>
             <div class="cards_result">
-                <div class="cards_result-item">
+                <div class="cards_result-item" style="background-image: url(./img/АнастасияЕмельянова.svg)">
                     <div class="cards_result-item__text">
                         <h4>Анастасия Емельянова</h4>
                         <p>Балийский блогер</p>
                         <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
                     </div>
                 </div>
-                <div class="cards_result-item">
+                <div class="cards_result-item" style="background-image: url(./img/ИринаГутина.svg)">
                     <div class="cards_result-item__text">
-                        <h4>Анастасия Емельянова</h4>
+                        <h4>Ирина Гутина</h4>
                         <p>Балийский блогер</p>
                         <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
                     </div>
                 </div>
-                <div class="cards_result-item">
+                <div class="cards_result-item" style="background-image: url(./img/МарчелКаньшин.svg)">
                     <div class="cards_result-item__text">
-                        <h4>Анастасия Емельянова</h4>
+                        <h4>Марчел Каньшин</h4>
                         <p>Балийский блогер</p>
                         <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
                     </div>
                 </div>
-                <div class="cards_result-item">
+                <div class="cards_result-item" style="background-image: url(./img/ИринаПогорелова.svg)">
                     <div class="cards_result-item__text">
-                        <h4>Анастасия Емельянова</h4>
+                        <h4>Ирина Погорелова</h4>
                         <p>Балийский блогер</p>
                         <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
                     </div>
                 </div>
-                <div class="cards_result-item">
+                <div class="cards_result-item" style="background-image: url(./img/АнастасияДолинина.svg)">
                     <div class="cards_result-item__text">
-                        <h4>Анастасия Емельянова</h4>
+                        <h4>Анастасия Долинина</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ЮлияСолопова.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Юлия Солопова</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ЕкатеринаПозднякова.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Екатерина Позднякова</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ПавелОвчар.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Павел Овчар</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ЕленаШульгина.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Елена Шульгина</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ТимурХалидулин.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Тимур Халидулин</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ВикторОсин.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Виктор Осин</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ПавелОконор.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Павел Оконор</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ТатьянаБомдаренко.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Татьяна Бомдаренко</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/ЕкатеринаМаклакова.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Екатерина Маклакова</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/МаргаритаОмарова.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>Маргарита Омарова</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/noName1.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>noName1</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/noName2.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>noName2</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/noName3.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>noName3</h4>
+                        <p>Балийский блогер</p>
+                        <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
+                    </div>
+                </div>
+                <div class="cards_result-item" style="background-image: url(./img/noName4.svg)">
+                    <div class="cards_result-item__text">
+                        <h4>noName4</h4>
                         <p>Балийский блогер</p>
                         <p>Составила программу своего курса по ЗОЖ, стала ближе к подписчикам</p>
                     </div>
                 </div>
             </div>
-            <span class="btn" id="showmore"><a href="">показать еще</a></span>
+            <button class="btn" id="showmore-results">показать еще</button>
         </div>
     </section>
     <section>
@@ -336,12 +438,26 @@
                 <img src="./img/trustPhoto1.svg" alt="photo" class="cards_trust_photo-item">
                 <img src="./img/trustPhoto2.svg" alt="photo" class="cards_trust_photo-item">
                 <img src="./img/trustPhoto3.svg" alt="photo" class="cards_trust_photo-item">
-                <img src="./img/trustPhoto1.svg" alt="photo" class="cards_trust_photo-item">
-                <img src="./img/trustPhoto2.svg" alt="photo" class="cards_trust_photo-item">
-                <img src="./img/trustPhoto3.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto4.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto5.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto6.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto7.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto8.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto9.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto10.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto11.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto12.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto13.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto14.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto15.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto16.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto17.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto18.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto19.svg" alt="photo" class="cards_trust_photo-item">
+                <img src="./img/trustPhoto20.svg" alt="photo" class="cards_trust_photo-item">
 
             </div>
-            <span class="btn" id="showmore"><a href="">показать еще</a></span>
+            <button class="btn" id="showmore-photo">показать еще</button>
         </div>
     </section>
     <section>
@@ -407,5 +523,7 @@
         </div>
         <div class="copyright">© COSMO WEB - Создание и продвижение сайтов</div>
     </footer>
+    
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
