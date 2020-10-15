@@ -250,11 +250,13 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-column-gap: 84px;
+          column-gap: 84px;
 }
 
 .cards-item {
@@ -324,6 +326,11 @@ input[type=submit] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 104px;
+          column-gap: 104px;
   margin-top: 59px;
 }
 
@@ -336,7 +343,6 @@ input[type=submit] {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 46px;
-  margin-right: 104px;
 }
 
 .cards_audience .cards-item__img {
@@ -369,6 +375,9 @@ input[type=submit] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 10px;
           column-gap: 10px;
 }
@@ -432,6 +441,9 @@ input[type=submit] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 59px;
   -webkit-column-gap: 120px;
           column-gap: 120px;
@@ -521,6 +533,9 @@ input[type=submit] {
           column-gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #commentVideo:checked ~ .comments__cards_video {
@@ -531,6 +546,9 @@ input[type=submit] {
           column-gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards_text-item {
@@ -594,6 +612,9 @@ input[type=submit] {
           column-gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards_trust_photo-item {
@@ -618,6 +639,9 @@ input[type=submit] {
           column-gap: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards_video-item {
@@ -689,11 +713,6 @@ footer_phone {
   }
   footer nav {
     display: none;
-  }
-  .cards, .cards_audience, .cards_result, .cards_video, .comments__cards_text, .comments__cards_video {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

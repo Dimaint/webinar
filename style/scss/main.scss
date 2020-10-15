@@ -240,8 +240,9 @@ h2 {
     margin-top: 59px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    column-gap: 84px;
 
     &-item {
         max-width: 540px;
@@ -306,12 +307,14 @@ input[type=submit] {
 .cards_audience {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 104px;
     margin-top: 59px;
     .cards-item {
         display: flex;
         flex-direction: row;
         margin-bottom: 46px;
-        margin-right: 104px;
+        // margin-right: 104px;
     }
     .cards-item__img {
         max-width: 104px;
@@ -338,7 +341,7 @@ input[type=submit] {
 .cards_result {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    justify-content: center;
     column-gap: 10px;
     &-item {
         background: white  center top no-repeat;
@@ -346,6 +349,7 @@ input[type=submit] {
         width: 296px;
         height: 378px;
         margin-bottom: 10px;
+        // margin-right: 10px;
         cursor: pointer;
         &:hover .cards_result-item__text {
             background-color: rgba(39,149,195, 0.4);
@@ -388,6 +392,7 @@ input[type=submit] {
 .cards_registrate {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 59px;
     column-gap: 120px;
     .cards-item {
@@ -458,12 +463,14 @@ input[type=submit] {
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #commentVideo:checked ~ .comments__cards_video {
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -520,6 +527,8 @@ input[type=submit] {
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
+
     &-item {
         max-width: 296px;
         height: 240px;
@@ -539,6 +548,7 @@ input[type=submit] {
     display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
     &-item {
         margin-bottom: 10px;
         
